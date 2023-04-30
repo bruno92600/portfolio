@@ -3,11 +3,13 @@ import Profile from "../../assets/IMG_9194.jpeg"
 import Logo from "../../assets/logo1.png"
 import { Link } from "react-router-dom"
 import { FaArrowRight } from 'react-icons/fa'
+import Loader from '../../components/Loader'
 import "./home.css"
 
 const Home = () => {
   return (
     <section className="home section grid">
+      <Loader />
       <img src={Profile} alt="" className="home__img" />
 
       <div className="home__content">
